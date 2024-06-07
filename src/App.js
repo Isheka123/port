@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/about/About";
+import Code from "./components/code/Code";
+import Youtube from "./components/youtube/Youtube";
+import Footer from "./components/footer/Footer";
+import "./index.css";
+import Projects from "./components/projects/Projects";
+import GoToTop from "./components/gototop/GoToTop";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/home/Home";
+import Courses from "./components/courses/Courses";
+import Freelance from "./components/freelance/Freelance";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="h-screen">
+                  <Home />
+                  <About />
+                  <Code />
+                  <Youtube />
+                  <Projects />
+                  <Footer />
+                </div>
+                <GoToTop />
+              </>
+            }
+          />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/freelance" element={<Freelance />} />
+         
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
