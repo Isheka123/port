@@ -6,11 +6,24 @@ import { youtube } from '../../assests';
 const Courses = () => {
   return (
     <div>
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+
+        .animate-marquee {
+          display: inline-block;
+          animation: marquee 10s linear infinite;
+        }
+      `}</style>
       <Navbar />
       <div className="bg-black p-10 flex items-center justify-center relative">
         <div className="absolute top-0 w-full">
-          <div className="bg-yellow-500 text-black py-2 text-center ">
-            <marquee className="text-xl font-bold">Coming Soon</marquee>
+          <div className="bg-yellow-500 text-black py-2 text-center overflow-hidden">
+            <div className="animate-marquee text-xl font-bold whitespace-nowrap">
+              Coming Soon
+            </div>
           </div>
         </div>
         <div className="text-white text-center flex flex-wrap justify-center gap-10 mt-12">
@@ -58,7 +71,6 @@ const Courses = () => {
           />
         </div>
       </div>
-    
     </div>
   );
 };

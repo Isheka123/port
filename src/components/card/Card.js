@@ -4,11 +4,11 @@ import { photo } from "../../assests";
 const Card = ({ title, rating, reviewCount, imageSrc, description, price }) => {
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img className="p-8 rounded-t-lg" src={imageSrc} alt="product image" />
+      <a href="https://www.youtube.com/channel/UC4QLrLIifQKPSyIpa0UdUlg">
+        <img className="p-8 rounded-t-lg" src={imageSrc} alt="product" />
       </a>
       <div className="px-5 pb-5">
-        <a href="#">
+        <a href="https://www.youtube.com/channel/UC4QLrLIifQKPSyIpa0UdUlg">
           <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h5>
@@ -47,7 +47,7 @@ const Card = ({ title, rating, reviewCount, imageSrc, description, price }) => {
 
         <div className="flex items-center justify-between">
           <div className="flex gap-2">
-            <img src={photo} alt="photo" className="w-9 h-10" />
+            <img src={photo} alt="logo" className="w-9 h-10" />
             <p className="text-black mt-3 font-bold">{description}</p>
           </div>
           <span className="text-2xl font-bold text-gray-900 dark:text-white">
