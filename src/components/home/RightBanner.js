@@ -25,7 +25,7 @@ const RightBanner = () => {
         effect="blur"
         placeholderSrc={profile}
         alt="logo"
-        className="w-[20rem] h-[23rem] lg:w-[30rem] lg:h-[35rem] lg:mb-10"
+        className="w-[20rem] h-[23rem] lg:w-[27rem] lg:h-[32rem] lg:mb-10"
       />
     </motion.div>
   );

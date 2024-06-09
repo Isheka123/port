@@ -10,7 +10,7 @@ const Course2 = () => {
 
   return (
     <motion.div
-      className="lg:h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#3F3333] to-black text-white p-10"
+      className=" flex flex-col items-center justify-center bg-gradient-to-b from-[#3F3333] to-black text-white p-10"
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }} // Step 4: Animate based on inView
       transition={{ duration: 1 }}
@@ -78,10 +78,10 @@ const Course2 = () => {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Step 4: Animate based on inView
           transition={{ duration: 1, delay: 2.5 }}
         >
-          <a href="https://www.linkedin.com/in/ch-vikas/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white text-center lg:px-16 lg:py-4 px-10 py-5 rounded-full hover:bg-blue-600 transition-colors">
+          <a href="https://www.linkedin.com/in/ch-vikas/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white text-center lg:px-16 lg:py-4 px-10 py-5 mb-5 rounded-full hover:bg-blue-600 transition-colors">
             Meet us on Linkedin
           </a>
-          <a href="mailto:vikaschelluru@gmail.com" className="bg-blue-500 text-white px-16 py-4 md:py-5 rounded-full hover:bg-blue-600 text-center transition-colors">
+          <a href="mailto:vikaschelluru@gmail.com" className="bg-blue-500 text-white px-16 py-4 md:py-5 rounded-full hover:bg-blue-600 text-center mb-5 transition-colors">
             Contact us
           </a>
         </motion.div>
