@@ -10,7 +10,7 @@ const Course2 = () => {
 
   return (
     <motion.div
-      className="lg:h-screen md:h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#3F3333] to-black text-white p-10"
+      className="lg:h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#3F3333] to-black text-white p-10"
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }} // Step 4: Animate based on inView
       transition={{ duration: 1 }}

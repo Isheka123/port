@@ -80,7 +80,7 @@ const Course3 = () => {
             href="https://github.com/Vikas-ABD"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors"
+            className="bg-blue-500 text-white px-6 py-3 font-bold text-xl rounded-full hover:bg-blue-600 transition-colors"
           >
             Go to GitHub
           </a>

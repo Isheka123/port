@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <Element
       name="projects"
-      className="lg:h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#473938] to-black text-white text-center p-8 font-sans"
+      className=" flex flex-col items-center justify-center bg-gradient-to-b from-[#473938] to-black text-white text-center p-8 font-sans"
     >
       <motion.div
         ref={ref}

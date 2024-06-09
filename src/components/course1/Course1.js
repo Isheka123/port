@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { laptop } from "../../assests/index";
 
 const Course1 = () => {
+  const handleContactMe = () => {
+    window.location.href = "mailto:vikaschelluru@gmail.com";
+  };
   return (
     <motion.div
       className="bg-black mt-0 lg:h-screen flex lg:flex-row flex-col items-center justify-center "
@@ -34,6 +37,7 @@ const Course1 = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
+          onClick={handleContactMe}
         >
           Contact us
         </motion.button>

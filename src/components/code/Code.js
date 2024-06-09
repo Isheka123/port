@@ -37,7 +37,7 @@ const Code = () => {
   return (
     <div
       id="code"
-      className="lg:h-screen md:h-screen bg-gradient-to-b from-[#344444] to-black flex items-center justify-center"
+      className="lg:h-screen bg-gradient-to-b from-[#344444] to-black flex items-center justify-center"
     >
       <motion.div
         className="text-white text-center max-w-xl lg:max-w-2xl mt-10 mb-20"
