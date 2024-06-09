@@ -6,7 +6,7 @@ import { Link as SmoothScroll } from "react-scroll";
 const Navbar = () => {
   return (
     <>
-      <nav className="p-5 flex flex-wrap items-center justify-between bg-black">
+      <nav className="p-5 lg:pb-0 flex flex-wrap items-center justify-between bg-black">
         <div className="w-full flex lg:w-auto lg:justify-start justify-center md:justify-center mb-2 ">
           <Link to="/">
             <img
