@@ -154,9 +154,10 @@ const Projects = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="py-4 px-8 bg-blue-500 text-white text-lg font-bold rounded-lg hover:bg-blue-600"
+              type="button"
+              className=" text-white bg-gradient-to-r from-[#433635]-400 via-[#433635]-500 to-[#433635]-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-lg text-xl px-5 font-bold py-3 text-center me-2 mb-2"
             >
-              Show More
+             Show More
             </motion.button>
           </Link>
         </motion.div>

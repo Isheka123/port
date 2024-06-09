@@ -1,46 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { FaStar, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
+import React, { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { IoIosQuote } from "react-icons/io";
+import { isheka, swetha } from "../../assests";
 
 const clients = [
+    {
+        name: "Swetha",
+        position: "Assosiate ML Engineer at Spritle",
+        img_url: swetha,
+        stars: 4,
+        disc: `Vikas developed an advanced inspection and tracking application for water bottle production line using YOLOv8. The application not only accurately detects defects but also efficiently tracks each bottle throughout the inspection process. Vikas's deep understanding of computer vision and machine learning technologies was crucial in achieving such a high level of precision and reliability. The project was completed on time and exceeded all performance expectations. I highly recommend Vikas for any industrial automation and AI-driven projects.`,
+      },
   {
-    name: "John Michel",
-    position: "Web Developer",
-    img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-    stars: 3,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-  },
-  {
-    name: "John Michel",
-    position: "Web Developer",
-    img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+    name: "Kavya Sai Isheka",
+    position: "Full Stack Developer at EY",
+    img_url: isheka,
     stars: 4,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+    disc: ` Vikas developed an pothole detection web application project. The primary goal was to create a lightweight, efficient solution, and Vikas delivered beyond my expectations. The application is incredibly fast, responsive, and easy to use, all while maintaining a minimal footprint. Vikas's expertise and attention to detail are evident in every aspect of the application. I am thoroughly impressed with the quality of work and highly recommend Vikas to anyone looking to integrate AI into their application.`,
   },
-  {
-    name: "John Michel",
-    position: "Web Developer",
-    img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-    stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-  },
-  {
-    name: "John Michel",
-    position: "Web Developer",
-    img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-    stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-  },
+ 
 ];
 
 const Course4 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [numCardsToShow, setNumCardsToShow] = useState(getCardsToShow());
 
   // Animation variants
   const containerVariants = {
@@ -61,8 +45,8 @@ const Course4 = () => {
   // useInView hook to trigger animation when in view
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true,  // Trigger only once
-    threshold: 0.1,     // 10% of the component is visible
+    triggerOnce: true, // Trigger only once
+    threshold: 0.1, // 10% of the component is visible
   });
 
   useEffect(() => {
@@ -71,30 +55,17 @@ const Course4 = () => {
     }
   }, [controls, inView]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setNumCardsToShow(getCardsToShow());
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? clients.length - numCardsToShow : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? clients.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === clients.length - numCardsToShow ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === clients.length - 1 ? 0 : prevIndex + 1
+    );
   };
-
-  function getCardsToShow() {
-    if (window.innerWidth >= 1024) return 3; // Large screen
-    if (window.innerWidth >= 768) return 2; // Medium screen
-    return 1; // Small screen
-  }
 
   return (
     <motion.div
@@ -104,8 +75,10 @@ const Course4 = () => {
       initial="hidden"
       animate={controls}
     >
-      <p className='text-4xl mb-8 md:text-5xl md:mb-12 text-center'>What Our Clients Say</p>
-      <div className='flex items-center justify-center w-full'>
+      <p className="text-4xl mb-8 md:text-5xl md:mb-12 text-center">
+        What Our Clients Say
+      </p>
+      <div className="flex items-center justify-center w-full">
         <motion.button
           onClick={handlePrev}
           className="p-2 mx-4 rounded-full"
@@ -113,32 +86,43 @@ const Course4 = () => {
         >
           <FaArrowLeft className="lg:text-3xl md:text-3xl text-2xl" />
         </motion.button>
-        <motion.div
-          className="w-full max-w-5xl lg:p-4 md:p-4 pb-2 pt-2 pl-1 pr-1 flex items-center justify-center overflow-hidden"
-        >
-          <motion.div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
-            {clients.slice(currentIndex, currentIndex + numCardsToShow).map((client, index) => (
-              <motion.div
-                key={index}
-                className="bg-gray-700 rounded-xl p-4 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:rounded-2xl hover:bg-gray-600 w-full"
-                variants={itemVariants}
-              >
-                <motion.img
-                  src={client.img_url}
-                  alt={client.name}
-                  className="w-24 h-24 rounded-full mb-4"
-                  whileHover={{ scale: 1.1 }}
-                />
-                <h3 className="text-2xl font-semibold">{client.name}</h3>
-                <p className="text-gray-400">{client.position}</p>
-                <motion.div className="flex justify-center mt-2">
-                  {Array.from({ length: client.stars }).map((_, starIndex) => (
-                    <FaStar key={starIndex} className="text-yellow-500" />
-                  ))}
+        <motion.div className="w-full max-w-5xl lg:p-4 md:p-4 pb-2 pt-2 pl-1 pr-1 flex items-center justify-center overflow-hidden">
+          <motion.div className="grid grid-cols-1 gap-4">
+            {clients
+              .slice(currentIndex, currentIndex + 1)
+              .map((client, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-gray-700 rounded-xl p-4 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:rounded-2xl hover:bg-gray-600 w-full"
+                  variants={itemVariants}
+                >
+                  <motion.div className="flex flex-row justify-between w-full">
+                    <span className="text-6xl text-[#01be96] opacity-70">
+                      <IoIosQuote />
+                    </span>
+                    <motion.div className="flex mt-5 ">
+                      {Array.from({ length: client.stars }).map(
+                        (_, starIndex) => (
+                          <FaStar key={starIndex} className="text-yellow-500" />
+                        )
+                      )}
+                    </motion.div>
+                  </motion.div>
+                  <p className="mt-4">{client.disc}</p>
+                  <motion.div className="flex gap-5 mt-5">
+                    <motion.img
+                      src={client.img_url}
+                      alt={client.name}
+                      className="w-20 h-20 rounded-full mt-2"
+                      whileHover={{ scale: 1.1 }}
+                    />
+                    <motion.div className="mt-5">
+                      <h3 className="text-2xl font-semibold">{client.name}</h3>
+                      <p className="text-gray-400">{client.position}</p>
+                    </motion.div>
+                  </motion.div>
                 </motion.div>
-                <p className="mt-4">{client.disc}</p>
-              </motion.div>
-            ))}
+              ))}
           </motion.div>
         </motion.div>
         <motion.button

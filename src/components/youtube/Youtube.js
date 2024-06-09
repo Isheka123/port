@@ -1,5 +1,5 @@
 import React from "react";
-import { desktop, spritle, seewise } from "../../assests/index";
+import { youtube, spritle, seewise } from "../../assests/index";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -47,7 +47,7 @@ const Youtube = () => {
       className="lg:h-screen bg-gradient-to-b from-[#403445] to-black flex items-center justify-center text-white text-center p-8"
     >
       <motion.div
-        className="lg:max-w-4xl"
+        className="lg:max-w-5xl"
         ref={ref}
         variants={containerVariants}
         initial="hidden"
@@ -64,11 +64,12 @@ const Youtube = () => {
           className="flex lg:flex-row flex-col justify-center items-center gap-20"
           variants={containerVariants}
         >
-          <motion.div variants={itemVariants}>
-            <img src={desktop} alt="laptop" className="h-60 w-50 mt-10" />
+          <motion.div variants={itemVariants} className="mt-10">
+            <img src={youtube} alt="laptop" className="h-[15rem] w-[25rem] mb-5" />
+           
             <motion.button
               onClick={handleConnectLinkedIn}
-              className="mt-[2.1rem] py-3 lg:py-6 px-6 lg:px-12 bg-[#F2F5C5] text-black text-xl sm:text-2xl font-bold rounded-3xl hover:bg-[#ACE1AF] hover:text-black transition duration-300 md:max-w-md"
+              className=" text-white bg-gradient-to-r from-[#403445]-400 via-[#403445]-500 to-[#403445]-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-lg text-xl px-10 font-bold py-6 text-center me-2 mb-2"
               variants={itemVariants}
             >
               Go To My Youtube
@@ -89,7 +90,7 @@ const Youtube = () => {
               </motion.h4>
               <motion.button
                 onClick={handleContactMe}
-                className="py-3 lg:py-6 px-6 lg:px-12 bg-[#F2F5C5] text-black text-xl sm:text-2xl font-bold rounded-3xl hover:bg-[#ACE1AF] hover:text-black transition duration-300 mb-4 sm:mb-0 md:max-w-md"
+                className="text-white bg-gradient-to-r from-[#403445]-400 via-[#403445]-500 to-[#403445]-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-lg text-xl px-10 font-bold py-6 text-center me-2 mb-2"
                 variants={itemVariants}
               >
                 Contact Me Directly

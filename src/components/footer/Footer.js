@@ -10,6 +10,9 @@ const Footer = () => {
             className="lg:h-10 sm:h-22 md:h-36"
           />
           <p>vikaschelluru@gmail.com</p>
+          <div className="mt-10 text-center">
+        <p>&copy; {new Date().getFullYear()} Computer Vision Freelancer. All rights reserved.</p>
+      </div>
     </div>
   )
 }

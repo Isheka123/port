@@ -25,8 +25,14 @@ import lip from "./images/lip.jpg"
 import helipad from "./images/helipad.png"
 import real from "./images/real.png"
 import person from "./images/person.jpg"
+import youtube from "./images/youtube.png"
+import isheka from "./images/isheka.jpg"
+import swetha from "./images/swetha.jpg"
 export{
     logo,
+    swetha,
+    isheka,
+    youtube,
     crosswork,
     mtop,
     real,

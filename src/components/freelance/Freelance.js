@@ -3,9 +3,9 @@ import Navbar from "../navbar/Navbar"
 import Course1 from '../course1/Course1'
 import Course2 from '../course2/Course2'
 import Course3 from '../course3/Course3'
-import Course4 from '../course4/Course4'
 import Course5 from '../course5/Course5'
 import Footer from "../footer/Footer"
+import Course4 from '../course4/Course4'
 const Freelance = () => {
   return (
     <div className='bg-black'>
