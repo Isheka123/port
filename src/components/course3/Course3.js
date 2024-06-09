@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaGithub, FaPython, FaRobot, FaCogs } from "react-icons/fa";
-import { SiPytorch, SiNvidia, SiOpencv, SiCplusplus } from "react-icons/si";
+import { SiPytorch, SiNvidia, SiOpencv } from "react-icons/si";
 import { tf } from "../../assests"; 
 const Course3 = () => {
   // Animation variants
