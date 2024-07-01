@@ -6,8 +6,8 @@ import github from "./images/github.png";
 import laptop from "./images/laptop.jpg";
 import desktop from "./images/desktop.webp";
 import company from "./images/company.webp";
-import seewise from "./images/seewise.png";
-import spritle from "./images/spritle.png";
+// import seewise from "./images/seewise.png";
+// import spritle from "./images/spritle.png";
 import logo2 from "./images/logo2.png";
 import maxresdefault from "./images/maxresdefault.jpg"
 import parking from "./images/parking.jpg"
@@ -53,8 +53,8 @@ export{
     laptop,
     desktop,
     company,
-    seewise,
-    spritle,
+    // seewise,
+    // spritle,
     logo2,
     maxresdefault,
     parking,

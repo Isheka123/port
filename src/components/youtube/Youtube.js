@@ -1,5 +1,5 @@
 import React from "react";
-import { youtube, spritle, seewise } from "../../assests/index";
+import { youtube } from "../../assests/index";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
