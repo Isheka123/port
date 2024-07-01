@@ -80,12 +80,10 @@ const Youtube = () => {
               Company Collaborations
             </p>
             <div className="flex flex-col justify-center items-center">
-              <motion.p className="text-white font-bold text-2xl mb-3" variants={itemVariants}>
+              <motion.p className=" font-bold text-orange-300 text-2xl mb-3" variants={itemVariants}>
                 Syncopation AI
               </motion.p>
-              <motion.img src={seewise} alt="seewise" className="h-25 w-40" variants={itemVariants} />
-              <motion.img src={spritle} alt="spritle" className="h-20 w-40 mb-5" variants={itemVariants} />
-              <motion.h4 className="text-3xl font-bold mb-4" variants={itemVariants}>
+              <motion.h4 className="text-3xl font-bold mt-10 mb-4" variants={itemVariants}>
                 Promotion Videos
               </motion.h4>
               <motion.button
