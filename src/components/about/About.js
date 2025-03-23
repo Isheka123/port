@@ -56,32 +56,27 @@ const About = () => {
           About Me
         </motion.p>
         <motion.p
-          className="lg:text-2xl md:text-xl text-lg mb-8 lg:mb-8"
+          className="lg:text-xl md:text-xl text-lg mb-8 lg:mb-8"
           variants={itemVariants}
         >
-          My journey began back in college when I started learning about
-          computer vision and AI, diving into new topics and sharing all the
-          fascinating aspects I discovered. I quickly became passionate about
-          content creation, keeping up with the latest technologies, and working
-          on amazing projects.
+          My journey into the world of AI and computer vision began back in college, where I immersed myself in exploring groundbreaking technologies and sharing the fascinating things I learned. What started as a passion for learning quickly evolved into a love for creating content, staying on the cutting edge of innovation, and working on projects that truly excite me.
         </motion.p>
         <motion.p
-          className="lg:text-2xl md:text-xl text-lg mb-8 lg:mb-8"
+          className="lg:text-xl md:text-xl text-lg mb-8 lg:mb-8"
           variants={itemVariants}
         >
-          Fast forward to today, and I'm expanding my personal brand while doing
-          what I love. As you can see on my website, I'm involved in a variety
-          of exciting activities. These include my YouTube channel, offering
-          courses, running a freelance business, participating in numerous
-          collaborations, and most importantly, fostering a fantastic and
-          engaged community.
+        Fast forward to today, I’m proud to be growing my personal brand while doing what I love—building, creating, and inspiring. I’m actively involved in several exciting ventures:
+🚀 YouTube channel simplifying complex AI concepts,
+🤝 Freelance projects and impactful collaborations.
+I’m also developing innovative products:
+🤖 Agentic Chatbots for business process automation,
+👁️ Real-Time Vision AI Systems powered by AWS and FastAPI
         </motion.p>
         <motion.p
-          className="lg:text-2xl md:text-xl text-lg mt-2 lg:mt-4"
+          className="lg:text-xl md:text-xl text-lg mt-2 lg:mt-4"
           variants={itemVariants}
         >
-          Feel free to reach out to me if you are interested in partnering up or
-          collaborating.
+          If you’re interested in collaborating, partnering, or exploring opportunities together, feel free to reach out. I’m always excited to connect with like-minded innovators and businesses ready to make an impact.
         </motion.p>
         <motion.div
           className="lg:mt-15 mt-5 md:mt-10 flex gap-2 lg:gap-14 md:gap-8 md:ml-6 flex-col md:flex-row lg:flex-row justify-center"

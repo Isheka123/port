@@ -53,9 +53,9 @@ const Course3 = () => {
           className="text-2xl mb-10 max-w-4xl text-center"
           variants={itemVariants}
         >
-          We specialize in AI, Deep Learning, Computer Vision, and Robotics. Our
-          team is proficient in Python and hardware electronics, and skilled in
-          frameworks such as PyTorch, TensorFlow, NVIDIA, and OpenCV. We bring
+          We specialize in AI, Gen AI, Computer Vision, and AWS. Our
+          team is proficient in Frontend and Backend (FastAPI), and skilled in
+          frameworks such as PyTorch, TensorFlow, LangChain, and LangGraph. We bring
           cutting-edge technology and innovation to your projects.
         </motion.p>
         <motion.div

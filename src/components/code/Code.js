@@ -56,8 +56,8 @@ const Code = () => {
           Check out my Github
         </motion.p>
         <motion.p className="text-2xl" variants={itemVariants}>
-          Computer Vision, Deep Learning, Machine Learning, Django, Python,
-          Tensorflow, PyTorch, AI, etc.
+          Computer Vision, Gen AI, Machine Learning, Django, FastAPI,
+          AWS, PyTorch etc.
         </motion.p>
         <motion.div
           className="mt-20 flex lg:flex-row md:flex-row flex-col items-center justify-center gap-20"

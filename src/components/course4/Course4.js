@@ -15,7 +15,7 @@ const clients = [
       },
   {
     name: "Kavya Sai Isheka",
-    position: "Full Stack Developer at EY",
+    position: "Full Stack Developer",
     img_url: isheka,
     stars: 4,
     disc: ` Vikas developed an pothole detection web application project. The primary goal was to create a lightweight, efficient solution, and Vikas delivered beyond my expectations. The application is incredibly fast, responsive, and easy to use, all while maintaining a minimal footprint. Vikas's expertise and attention to detail are evident in every aspect of the application. I am thoroughly impressed with the quality of work and highly recommend Vikas to anyone looking to integrate AI into their application.`,

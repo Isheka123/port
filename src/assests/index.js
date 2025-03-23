@@ -28,8 +28,16 @@ import person from "./images/person.jpg"
 import youtube from "./images/youtube.png"
 import isheka from "./images/isheka.jpg"
 import swetha from "./images/swetha.jpg"
+import chatbot from "./images/chatbot.jpeg"
+import voicechatbot from "./images/voicechatbot.jpeg"
+import tvseries from "./images/tvseries.jpg"
+import tennis from "./images/tennis.jpeg"
 export{
     logo,
+    chatbot,
+    tvseries,
+    tennis,
+    voicechatbot,
     swetha,
     isheka,
     youtube,

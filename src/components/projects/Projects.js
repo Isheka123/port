@@ -1,5 +1,5 @@
 import React from "react";
-import { maxresdefault, parking, three } from "../../assests";
+import { chatbot, parking, three } from "../../assests";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { motion, useAnimation } from "framer-motion";
@@ -61,6 +61,32 @@ const Projects = () => {
             variants={itemVariants}
           >
             <img
+              src={chatbot}
+              alt="Project 1"
+              className="w-full h-48 object-cover"
+            />
+            <a
+              href="https://github.com/Vikas-ABD/historical_monuments_ai.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-2 right-2 text-white text-3xl bg-black p-2 rounded-full"
+            >
+              <FaGithub />
+            </a>
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-4">
+              AI Chatbot for Travel Recommendations & Workflow Automation
+              </h2>
+              <p className="text-lg">
+              I developed an intelligent Conversational AI Bot using Streamlit for travel assistance focused on historical monuments. It automates workflows like OTP verification, email-based guide delivery, and database integration, ensuring a seamless user experience.
+              </p>
+            </div>
+          </motion.div>
+          {/* <motion.div
+            className="bg-[#5a4a4a] rounded-lg shadow-lg overflow-hidden relative"
+            variants={itemVariants}
+          >
+            <img
               src={maxresdefault}
               alt="Project 1"
               className="w-full h-48 object-cover"
@@ -85,7 +111,7 @@ const Projects = () => {
                 functionalities.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
           {/* Project Card 2 */}
           <motion.div
             className="bg-[#5a4a4a] rounded-lg shadow-lg overflow-hidden  relative"

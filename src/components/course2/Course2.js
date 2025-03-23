@@ -60,7 +60,7 @@ const Course2 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Step 4: Animate based on inView
             transition={{ duration: 1, delay: 1.75 }}
           >
-            <span className="font-bold">Lead the way in Industry 5.0</span> by merging human creativity with AI-driven automation for efficient, innovative <span className="font-bold">industrial solutions.</span>
+            <span className="font-bold">Agentic Chatbots for end-to-end business automation </span> and workflow orchestration, streamlining processes from customer engagement to backend operations, fully deployed and ready to scale.
           </motion.li>
           <motion.li
             className="mb-4"
@@ -69,7 +69,7 @@ const Course2 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Step 4: Animate based on inView
             transition={{ duration: 1, delay: 2 }}
           >
-            Solutions that <span className="font-bold">learn</span> from new data and <span className="font-bold">adjust their strategies</span> over time, ensuring that solutions remain <span className="font-bold">relevant and effective.</span>
+            Vision AI applications built with AWS, FastAPI, and Gen AI integration, enabling intelligent analysis across CCTV feeds, images, videos, and live webcam streams—bringing advanced automation and insights to real-world environments.
           </motion.li>
         </ul>
         <motion.div

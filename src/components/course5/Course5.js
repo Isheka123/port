@@ -2,9 +2,34 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowLeft, FaArrowRight, FaGithub } from 'react-icons/fa';
-import { rag, demo,land,pot,yolo,movie,crosswork,mtop,lip,helipad,real,person } from '../../assests';
+import { rag,voicechatbot,tvseries, maxresdefault, demo,land,pot,yolo,movie,crosswork,mtop,lip,helipad,real,person, tennis } from '../../assests';
 
 const projects = [
+  {
+    title: "Voice Chat Bot",
+    img_url: voicechatbot,
+    description: "Developed a voice-based AI chatbot for hands-free, interactive conversations. It integrates speech-to-text, LLM processing, and text-to-speech for seamless human-AI interactions, providing real-time intelligent responses.",
+    github_url: "https://github.com/Vikas-ABD/voice_chat_bot.git"
+  },
+  {
+    title: "Tv Series Analysis System With AI",
+    img_url: tvseries,
+    description: "Developed an AI system for theme extraction, character network visualization, and TV series classification using Scrapy and Transformers. Built a chatbot with a fine-tuned LLaMA 3.1 model for character simulations.",
+    github_url: "https://github.com/Vikas-ABD/tv_series_analysis-system_with_AI_NLP_LLM.git"
+  },
+  {
+    title: "Tennis Analysis system with AI",
+    img_url: tennis,
+    description: "This project provides an in-depth analysis of tennis players in a video, focusing on measuring their speed, ball shot speed, and the number of shots. The analysis involves detecting players and the tennis ball using YOLO models and extracting key points of the tennis court using a ResNet50 model.",
+    github_url: "https://github.com/Vikas-ABD/Tennis-Analysis-system-with-AI.git"
+  },
+  {
+    title: "Digital Shadow Of Tello Drone",
+    img_url: maxresdefault,
+    description: "Integrated Tello drone control via MATLAB with Tiny YOLOv4 for object detection and SVM, Isolation Forest, and autoencoders for anomaly detection. Enabled data exchange via OPC UA and Node-RED.",
+    github_url: "https://github.com/Vikas-ABD/digital_shadow_of_Tello_drone"
+  },
+
   {
     title: "RAG LLM Application With Wisper Integration",
     img_url: rag,

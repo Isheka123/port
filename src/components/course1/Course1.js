@@ -28,7 +28,7 @@ const Course1 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          We develop cutting-edge AI solutions, specializing in computer vision.
+          We develop cutting-edge AI solutions, specializing in vision AI and Agentic Chatbots.
           It's incredibly rewarding to see our innovative work making a real
           impact in the industry.
         </motion.p>

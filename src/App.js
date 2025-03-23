@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Courses from "./components/courses/Courses";
 import Freelance from "./components/freelance/Freelance";
-
+import Products from "./components/products/Products"
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
           />
           <Route path="/courses" element={<Courses />} />
           <Route path="/freelance" element={<Freelance />} />
+          <Route path="/my-products" element={<Products />} />
          
         </Routes>
       </BrowserRouter>

@@ -7,6 +7,7 @@ const LeftBanner = () => {
     words: [
       "Computer Vision Developer.",
       "Machine Learning Engineer.",
+      "Gen AI Developer.",
       "Problem Solver.",
     ],
     loop: true,
@@ -22,7 +23,7 @@ const LeftBanner = () => {
   };
 
   return (
-    <div className="mt-5 mb-10 text-white text-center order-2 lg:order-1">
+    <div className=" mb-10 text-white text-center order-2 lg:order-1">
       <motion.h3
         className="lg:text-4xl md:text-4xl font-bold text-3xl"
         initial="hidden"
@@ -49,8 +50,7 @@ const LeftBanner = () => {
         variants={variants}
         transition={{ duration: 0.5, delay: 1.5 }}
       >
-        I help companies and people build Computer Vision and Deep Learning
-        applications.
+        I help companies and people build Vision AI Solutions and Agentic chatbot Applications.
       </motion.p>
     </div>
   );
